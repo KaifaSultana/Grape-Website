@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto&display=swap');
+body{
+    background-color: rgb(0 0 0 / 89%);
+    color: white;
+    margin: 0 auto;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+.header-area {
+    background-color: black;
+    margin-bottom: 50px;
+   
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.header-area h3{
+    font-size: 30px;
+}
+.header-area .logo h3{
+    margin: 10px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    background-color: black;
+    margin-left: auto;
+}
+.menu li{
+    margin: 0 10px;
+    color: white;
+    font-size: 16px;
+}
+#home{
+    color: tomato;
+}
+.main-area{
+    display: flex;
+    align-items: center;
+}
+.main-area h2 {
+    font-size: 51px;
+    font-weight: 400;
+    margin: 0;
+}
+.main-area p{
+    font-size: 22px;
+}
+.main-area .content {
+    width: 60%;
+}
+.main-area button{
+    border-radius: 25px;
+    padding: 15px 50px;
+    border: none;
+    color: white;
+    margin-bottom: 15px;
+}
+.main-area .learn{
+    background-color: crimson;
+    margin-right: 20px;
+    border: 2px solid crimson;
+}
+.main-area .watch{
+    background-color: transparent;
+    border: 2px solid crimson;
+}
+.main-area .form-area{
+    width: 40%;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.form-area input{
+    width: 80%;
+    margin: 8px 0;
+    font-size: 14px;
+    padding: 15px;
+    background-color: rgb(110, 19, 19);
+    border: none;
+    color: white;
+}
+.form-area input[type="submit"]{
+    border-radius: 25px;
+    background-color: transparent;
+    border: 2px solid rgb(110, 19, 19);
+    width: 87%;
+    cursor: pointer;
+}
+@media only screen and (max-width:990){
+    
+    .header{
+        width: 80%;
+    }
+    .content button{
+        margin-bottom: 15px;
+    }
+}
+@media  only screen and (max-width:820px){
+    .main-area{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .main-area .form-area{
+        width: 100%;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .menu .opt{
+        display: none;
+    }
+    
+    .content button{
+        margin-bottom: 15px;
+    }
+    .main-area .content{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+
+}
